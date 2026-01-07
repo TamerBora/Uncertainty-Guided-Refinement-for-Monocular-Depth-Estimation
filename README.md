@@ -121,20 +121,24 @@ python benchmark.py --checkpoint checkpoints/flat_refiner_best.pth
 python benchmark.py --checkpoint checkpoints/unet_refiner_best.pth
 ```
 
----
-
 ### 3. Visual Analysis
 
-To generate qualitative comparison images (saved to `viz_results_rgb/`):
+To generate qualitative comparison images (saved to `viz_report_candidates/`):
+
+**Visualize Proposed Method (Default):**
 
 ```bash
 python visualize.py
 ```
 
-> **Note:**  
-> You may need to edit the checkpoint path inside `visualize.py` to visualize a specific model.
+**Visualize Baseline (U-Net):**
 
----
+```bash
+python visualize.py --checkpoint checkpoints/unet_refiner_best.pth
+```
+
+> **Note:**  
+> You may need to modify the checkpoint path inside `visualize.py` if you want to visualize a different model.
 
 ## 📊 Results Summary
 
