@@ -137,9 +137,6 @@ python visualize.py
 python visualize.py --checkpoint checkpoints/unet_refiner_best.pth
 ```
 
-> **Note:**  
-> You may need to modify the checkpoint path inside `visualize.py` if you want to visualize a different model.
-
 ## 📊 Results Summary
 
 - Improved robustness to real-world artifacts  
