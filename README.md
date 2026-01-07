@@ -28,16 +28,16 @@ It introduces a **Flat Residual CNN** that leverages the diffusion model’s own
 
 ```
 .
-├── make_marigold_data.py   # Generates training data (RGB + Mean Depth + Uncertainty)
-├── train.py                # Main training loop (Flat Refiner or U-Net baseline)
-├── flat_model.py           # Proposed Flat Residual Refiner architecture
-├── model.py                # Baseline MiniUNet architecture
-├── benchmark.py            # Quantitative evaluation (AbsRel, Delta1)
+├── make_marigold_data.py   # Generates training data
+├── train.py                # Main training loop
+├── flat_model.py           # Proposed Flat Residual Refiner
+├── model.py                # Baseline MiniUNet
+├── refiner_dataset.py      # Dataset loader and normalization  <-- ADD THIS LINE
+├── benchmark.py            # Quantitative evaluation
 ├── visualize.py            # Qualitative visual comparisons
-├── evaluate.py             # Differentiable Least Squares alignment logic
+├── evaluate.py             # Alignment logic
 ├── requirements.txt
 └── README.md
-```
 
 ---
 
