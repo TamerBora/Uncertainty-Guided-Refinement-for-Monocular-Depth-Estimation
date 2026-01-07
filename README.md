@@ -91,7 +91,7 @@ checkpoints/flat_refiner_best.pth
 
 ---
 
-#### Train U-Net (Baseline)
+#### Train U-Net (Alternative Solution)
 
 ```bash
 python train.py --model unet
@@ -115,7 +115,7 @@ To reproduce quantitative results (**AbsRel**, **Delta1**) on the test set:
 python benchmark.py --checkpoint checkpoints/flat_refiner_best.pth
 ```
 
-#### Evaluate Baseline
+#### Evaluate Alternative Solution 
 
 ```bash
 python benchmark.py --checkpoint checkpoints/unet_refiner_best.pth
@@ -131,7 +131,7 @@ To generate qualitative comparison images (saved to `viz_report_candidates/`):
 python visualize.py
 ```
 
-**Visualize Baseline (U-Net):**
+**Visualize Alternative Solution (U-Net):**
 
 ```bash
 python visualize.py --checkpoint checkpoints/unet_refiner_best.pth
