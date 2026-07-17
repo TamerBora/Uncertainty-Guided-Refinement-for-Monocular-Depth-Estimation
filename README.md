@@ -2,7 +2,6 @@
 
 **Author:** Tamer Bora İkizoğlu  
 **Course:** Deep Learning – Final Project  
-**Supervisor:** Dr. Mohammad Sabokrou  
 
 ---
 
